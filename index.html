@@ -10,57 +10,60 @@
     <title>My Brand</title>
 </head>
 <body>
-    <div class='navbar'>
-        <div class="brand-name">
-            My Brand
+    <section class="top_background">
+        <div class='navbar'>
+            <div class="brand-name">
+                <strong>My Brand</strong>
+            </div>
+    
+            <!-- Mobile view -->
+    
+            <nav class="nav">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Experiences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Articles</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+    
+                <ul class="nav__buttons">
+                    <li class="nav__item">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="btn--round btn">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+    
+          
         </div>
-
-        <!-- Mobile view -->
-
-        <nav class="nav">
-            <ul class="nav__item">
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Skills</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Experiences</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Articles</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="nav__buttons">
-                <li class="nav__item">
-                    <a href="#" class="nav-link">Login</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="btn--round btn">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
-
-      
-    </div>
+    </section>
+    
 
     <header class="header">
         <div class="header_box">
             <img src="assets/images/chance.jpeg" alt="Chance" class="header_image">
             <h2 class="heading-secondary">Hello @everyone, I am Software Developer</h2>
-            <a href="" class="header__cta btn--round btn">Book me !!</a>  <!--Call to action (cta) -->
+            <a href="#" class="header__cta btn--round btn">Book me !!</a>  <!--Call to action (cta) -->
         </div>
     </header>
   
     <main class="main">
         <section class="introduction">
             <div class="svg_photo_left">
-                <p class="">svg Photo</p>
+                <div class="triangle"></div>
             </div>
             <div class="short_bio_right">
                 <p class="bio_info">
@@ -72,37 +75,52 @@
             </div>
         </section>
 
-        <section class="skills">
-            <div class="skills_icons">
-                <span class="iconify" data-icon="logos:javascript"></span>
-                <span class="iconify" data-icon="logos:figma"></span>
-                <span class="iconify" data-icon="logos:html-5"></span>
-                <span class="iconify" data-icon="logos:css-3"></span>
-            </div>
-        </section>
 
-        <section class="experience">
-            <div class="experience_box">
-                <div class="experience_left_image">
-                    Photo
+        <section class="skills_experience">
+            <section class="skills">
+                <h3 class="heading-h3">
+                    Skills
+                </h3>
+                <div class="skills_icons">
+                    <span class="iconify" data-icon="logos:javascript"></span>
+                    <span class="iconify" data-icon="logos:figma"></span>
+                    <span class="iconify" data-icon="logos:html-5"></span>
+                    <span class="iconify" data-icon="logos:css-3"></span>
                 </div>
-                <div class="experience_right">
-                    <h3 class="heading-h3">
-                        Implemented websites
-                    </h3>
-                    <p class="experience_info">
-                        mobile applications, and landing pages from concept through deployment. 
-                        Standardized all output with a new, responsive, mobile-first approach 
-                        and strategy. Assessed UX and UI designs for technical feasibility. 
-                    </p>
+            </section>
+
+            <section class="experience">
+                <h3 class="heading-h3-ex">
+                    Experience
+                </h3>
+                <div class="experience_box">
+                    <div class="experience_left_image">
+                        Photo
+                    </div>
+                    <div class="experience_right">
+                        <h3 class="heading-h3">
+                            Implemented websites
+                        </h3>
+                        <p class="experience_info">
+                            mobile applications, and landing pages from concept through deployment. 
+                            Standardized all output with a new, responsive, mobile-first approach 
+                            and strategy. Assessed UX and UI designs for technical feasibility. 
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
+        
+
+        
 
         <section class="recents_articles">
             <div class="blog_cards">
-                <card class="card">
-                    <img src="#" alt="" class="card_photo">
+                <card class="card1">
+                
+                        <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo1">
+                   
+                    
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
@@ -116,8 +134,8 @@
                     </div>
                 </card>
 
-                <card class="card">
-                    <img src="#" alt="" class="card_photo">
+                <card class="card2">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo2">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
@@ -131,8 +149,8 @@
                     </div>
                 </card>
 
-                <card class="card">
-                    <img src="#" alt="" class="card_photo">
+                <card class="card3">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo3">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
