@@ -41,8 +41,6 @@ ul {
   list-style: none;
 }
 
-li {
-}
 
 a {
   text-decoration: none;
@@ -288,11 +286,7 @@ border-bottom-left-radius: 14px; */
   margin: 0px 10px;
 }
 
-.recents_articles {
-  /* background-color: orange;
-    height: 100vh;
-    margin-top:1010px; */
-}
+
 .blog_cards .card1 {
   position: absolute;
   width: 383px;
