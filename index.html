@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='css/index.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src='javascript/script.js'></script>
+    <script src='javascript/index.js'></script>
     <title>My Brand</title>
 </head>
+
 <body>
     <section class="top_background">
         <div class='navbar'>
             <div class="brand-name">
                 <strong>My Brand</strong>
             </div>
-    
-            <!-- Mobile view -->
-    
+
+
+
             <nav class="nav">
                 <ul class="nav__items">
                     <li class="nav__item">
@@ -33,45 +35,61 @@
                         <a href="#" class="nav-link">Articles</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="./pages/contactUs.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
-    
+
                 <ul class="nav__buttons">
                     <li class="nav__item">
-                        <a href="pages/login.html" class="nav-link">Login</a>
+                        <a href="pages/login.html" class="nav-link-login">Login</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="btn--round btn">Sign Up</a>
+                        <a href="pages/signup.html" class="nav-link-signup">Sign Up</a>
                     </li>
                 </ul>
+               
             </nav>
-    
-          
+
+            <!-- Mobile view -->
+            
+            <span class="iconify" id="menu_icon" data-icon="fa-solid:bars" onclick="toggle()"></span>
+
+            <card class="card_menu" id="card_menu">
+                <a href="#" class="home-menu">Home</a>
+                <a href="#" class="skills-menu">Skills</a>
+                <a href="#" class="experiences-menu">Experiences</a>
+                <a href="#" class="articles-menu">Articles</a>
+                <a href="#" class="login-menu">Login</a>
+                <a href="#" class="signup-menu">Sign Up</a>
+            </card>
+
         </div>
+
     </section>
-    
+
 
     <header class="header">
         <div class="header_box">
             <img src="assets/images/chance.jpeg" alt="Chance" class="header_image">
             <h2 class="heading-secondary">Hello @everyone, I am Software Developer</h2>
-            <a href="#" class="header__cta btn--round btn">Book me !!</a>  <!--Call to action (cta) -->
+            <a href="#" class="header__cta btn--round btn">Book me !!</a>
+            <!--Call to action (cta) -->
         </div>
     </header>
-  
+
     <main class="main">
         <section class="introduction">
             <div class="svg_photo_left">
                 <div class="triangle"></div>
-                <img src="assets/images/guyWithGlasses.png" alt="guy with glasses" class="guy_with_glasses" width="300px">
+                <img src="assets/images/guyWithGlasses.png" alt="guy with glasses" class="guy_with_glasses"
+                    width="300px">
             </div>
             <div class="short_bio_right">
                 <p class="bio_info">
-                    Seasoned and independent Front End Developer with 4 month 
-                    of experience in blending the art of design with skill of 
-                    programming to deliver an immersive and engaging user experience 
-                    through efficient website development, proactive feature optimization, 
+                    Seasoned and independent Front End Developer with 4 month
+                    of experience in blending the art of design with skill of
+                    programming to deliver an immersive and engaging user experience
+                    through efficient website development, proactive feature optimization,
                 </p>
             </div>
         </section>
@@ -96,70 +114,86 @@
                 </h3>
                 <div class="experience_box">
                     <div class="experience_left_image">
-                        Photo
+                        <span class="iconify" id="iconify-computer"
+                            data-icon="emojione-monotone:desktop-computer"></span>
                     </div>
                     <div class="experience_right">
                         <h3 class="heading-h3">
                             Implemented websites
                         </h3>
                         <p class="experience_info">
-                            mobile applications, and landing pages from concept through deployment. 
-                            Standardized all output with a new, responsive, mobile-first approach 
-                            and strategy. Assessed UX and UI designs for technical feasibility. 
+                            mobile applications, and landing pages from concept through deployment.
+                            Standardized all output with a new, responsive, mobile-first approach
+                            and strategy. Assessed UX and UI designs for technical feasibility.
                         </p>
                     </div>
                 </div>
             </section>
         </section>
-        
 
-        
+
+
 
         <section class="recents_articles">
             <div class="blog_cards">
                 <card class="card1">
-                
-                        <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo1">
-                   
-                    
+
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo1">
+
+
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
-                            star
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
                         </div>
                         <a href="#" class="card_more_link">more</a>
                     </div>
                 </card>
 
                 <card class="card2">
-                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo2">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo2">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
-                            star
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
                         </div>
                         <a href="#" class="card_more_link">more</a>
                     </div>
                 </card>
 
                 <card class="card3">
-                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo3">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo3">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
-                            star
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
+                            <span class="iconify" data-icon="emojione:star"></span>
                         </div>
                         <a href="#" class="card_more_link">more</a>
                     </div>
@@ -168,12 +202,12 @@
         </section>
 
     </main>
-    
+
     <footer class="footer">
         <div class="newsletter_form">
-            <form action="#" class="newsletter_box">
-                <input type="text" class="user_email_newsletter" placeholder="Enter your email ..." />
-                <button class="btn_submit">Newsletter</button>
+            <form name="newsletter" class="newsletter_box" action="#" onsubmit="return validateForm()" method="post">
+                <input type="text" name="email" class="user_email_newsletter" placeholder="Enter your email ..." />
+                <button type="submit" class="btn_submit">Newsletter</button>
             </form>
         </div>
         <div class="footer-footer">
@@ -182,46 +216,46 @@
             </div>
 
             <div class="brand_myBio">
-                <p class="headers">My Bio</p>
-                <ul class="bio_list">
+                <p class="quick_links">Quick links</p>
+                <ul class="bio_list1">
+                    <li class="bio_item">
+                        <a href="#" class="bio_link">Articles</a>
+                    </li>
                     <li class="bio_item">
                         <a href="#" class="bio_link">Skills</a>
                     </li>
                     <li class="bio_item">
-                        <a href="#" class="bio_link">experience</a>
-                    </li>
-                    <li class="bio_item">
-                        <a href="#" class="bio_link">bio</a>
+                        <a href="#" class="bio_link">Experience</a>
                     </li>
                 </ul>
             </div>
 
             <div class="brand_myBio">
-                <p class="headers">My Bio</p>
-                <ul class="bio_list">
+                <p class="footer_blog">Blog</p>
+                <ul class="bio_list2">
                     <li class="bio_item">
-                        <a href="#" class="bio_link">Skills</a>
+                        <a href="#" class="bio_link">Recent</a>
                     </li>
                     <li class="bio_item">
-                        <a href="#" class="bio_link">experience</a>
+                        <a href="#" class="bio_link">New</a>
                     </li>
                     <li class="bio_item">
-                        <a href="#" class="bio_link">bio</a>
+                        <a href="#" class="bio_link">Oldest</a>
                     </li>
                 </ul>
             </div>
 
             <div class="brand_myBio">
-                <p class="headers">My Bio</p>
-                <ul class="bio_list">
+                <p class="about_me">About Me</p>
+                <ul class="bio_list3">
                     <li class="bio_item">
-                        <a href="#" class="bio_link">Skills</a>
+                        <a href="#" class="bio_link">Resume</a>
                     </li>
                     <li class="bio_item">
-                        <a href="#" class="bio_link">experience</a>
+                        <a href="#" class="bio_link">github</a>
                     </li>
                     <li class="bio_item">
-                        <a href="#" class="bio_link">bio</a>
+                        <a href="#" class="bio_link">Tel</a>
                     </li>
                 </ul>
             </div>
@@ -239,6 +273,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
