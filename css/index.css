@@ -31,6 +31,140 @@ body {
 
 /* Starting the navbar */
 
+.navbar {
+  display: block;
+}
+
+#menu_icon {
+  position: absolute;
+  /* background-color: red; */
+  top: 77px;
+  left: 1200px;
+  font-size: 20px;
+  height: 7vh;
+  width: auto;
+  display: none;
+  
+  
+}
+
+.card_menu {
+  position: absolute;
+width: 167px;
+height: 212px;
+top: 140px;
+left: 100px;
+
+background: #565656;
+border-radius: 12px;
+display: none;
+}
+
+.home-menu {
+  position: absolute;
+width: 43px;
+height: 20px;
+left: 63px;
+top: 21px;
+
+font-family: Noto Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+}
+
+.skills-menu {
+  position: absolute;
+width: 38px;
+height: 20px;
+left: 65px;
+top: 47px;
+
+font-family: Noto Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+}
+
+.experiences-menu {
+  position: absolute;
+width: 87px;
+height: 20px;
+left: 45px;
+top: 73px;
+
+font-family: Noto Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+}
+
+.articles-menu {
+  position: absolute;
+width: 55px;
+height: 20px;
+left: 56px;
+top: 99px;
+
+font-family: Noto Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+}
+
+.login-menu {
+  position: absolute;
+width: 43px;
+height: 20px;
+left: 62px;
+top: 125px;
+
+font-family: Noto Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+}
+
+.signup-menu {
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 18px 28px;
+
+position: absolute;
+width: 104px;
+height: 35px;
+left: 32px;
+top: 151px;
+font-family: Noto Serif;
+font-size: 14px;
+color: white;
+
+background: #D81515;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 37px;
+}
+
 .brand-name {
   position: absolute;
   width: 185px;
@@ -598,4 +732,118 @@ border-bottom-left-radius: 14px; */
   position: absolute;
   left: 590px;
   top: 440px;
+}
+
+@media (max-width: 480px) {
+  .body {
+    overflow-x: hidden;
+  }
+
+  .top_background {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+  
+    background: #f0f0f0;
+  }
+
+  .brand-name {
+    position: absolute;
+    width: 185px;
+    height: 42px;
+    left: 50px;
+    top: 30px;
+  
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 41px;
+  
+    color: #000000;
+  }
+
+  .nav {
+    margin-left: 1200px;
+    display: none;
+  }
+
+  #menu_icon {
+    position: absolute;
+    /* background-color: red; */
+    top: 35px;
+    left: 400px;
+    font-size: 20px;
+    height: 5vh;
+    width: auto;
+    display: block;
+    color: var(--red);
+    
+    
+    
+  }
+
+  .header .header_box .header_image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 150px;
+    top: 110px;
+    background: url(../assets/images/chance.jpeg);
+    filter: drop-shadow(5px 9px 27px rgba(0, 0, 0, 0.25));
+    border-radius: 225px;
+  }
+
+  .header_box h2 {
+    position: absolute;
+    width: 955px;
+    height: 60px;
+    left: 80px;
+    top: 320px;
+  
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+  
+    /* identical to box height */
+  
+    color: #d81515;
+  }
+  
+  .header_box a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+  
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    left: 200px;
+    top: 370px;
+    font-size: 10px;
+  
+    background: #d81515;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+  }
+  
+  .card_menu {
+    position: absolute;
+  width: 167px;
+  height: 212px;
+  top: 70px;
+  left: 250px;
+  
+  background: #565656;
+  border-radius: 12px;
+  display: none;
+  z-index: 1000;
+  }
 }

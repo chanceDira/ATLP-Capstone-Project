@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,16 @@
     <script src='javascript/index.js'></script>
     <title>My Brand</title>
 </head>
+
 <body>
     <section class="top_background">
         <div class='navbar'>
             <div class="brand-name">
                 <strong>My Brand</strong>
             </div>
-    
-            <!-- Mobile view -->
-    
+
+
+
             <nav class="nav">
                 <ul class="nav__items">
                     <li class="nav__item">
@@ -36,7 +38,7 @@
                         <a href="./pages/contactUs.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
-    
+
                 <ul class="nav__buttons">
                     <li class="nav__item">
                         <a href="pages/login.html" class="nav-link-login">Login</a>
@@ -45,34 +47,49 @@
                         <a href="pages/signup.html" class="nav-link-signup">Sign Up</a>
                     </li>
                 </ul>
+               
             </nav>
-    
-          
+
+            <!-- Mobile view -->
+            
+            <span class="iconify" id="menu_icon" data-icon="fa-solid:bars" onclick="toggle()"></span>
+
+            <card class="card_menu" id="card_menu">
+                <a href="#" class="home-menu">Home</a>
+                <a href="#" class="skills-menu">Skills</a>
+                <a href="#" class="experiences-menu">Experiences</a>
+                <a href="#" class="articles-menu">Articles</a>
+                <a href="#" class="login-menu">Login</a>
+                <a href="#" class="signup-menu">Sign Up</a>
+            </card>
+
         </div>
-    
+
     </section>
-    
+
 
     <header class="header">
         <div class="header_box">
             <img src="assets/images/chance.jpeg" alt="Chance" class="header_image">
             <h2 class="heading-secondary">Hello @everyone, I am Software Developer</h2>
-            <a href="#" class="header__cta btn--round btn">Book me !!</a>  <!--Call to action (cta) -->
+            <a href="#" class="header__cta btn--round btn">Book me !!</a>
+            <!--Call to action (cta) -->
         </div>
     </header>
-  
+
     <main class="main">
         <section class="introduction">
             <div class="svg_photo_left">
                 <div class="triangle"></div>
-                <img src="assets/images/guyWithGlasses.png" alt="guy with glasses" class="guy_with_glasses" width="300px">
+                <img src="assets/images/guyWithGlasses.png" alt="guy with glasses" class="guy_with_glasses"
+                    width="300px">
             </div>
             <div class="short_bio_right">
                 <p class="bio_info">
-                    Seasoned and independent Front End Developer with 4 month 
-                    of experience in blending the art of design with skill of 
-                    programming to deliver an immersive and engaging user experience 
-                    through efficient website development, proactive feature optimization, 
+                    Seasoned and independent Front End Developer with 4 month
+                    of experience in blending the art of design with skill of
+                    programming to deliver an immersive and engaging user experience
+                    through efficient website development, proactive feature optimization,
                 </p>
             </div>
         </section>
@@ -97,37 +114,39 @@
                 </h3>
                 <div class="experience_box">
                     <div class="experience_left_image">
-                        <span class="iconify" id="iconify-computer" data-icon="emojione-monotone:desktop-computer"></span>
+                        <span class="iconify" id="iconify-computer"
+                            data-icon="emojione-monotone:desktop-computer"></span>
                     </div>
                     <div class="experience_right">
                         <h3 class="heading-h3">
                             Implemented websites
                         </h3>
                         <p class="experience_info">
-                            mobile applications, and landing pages from concept through deployment. 
-                            Standardized all output with a new, responsive, mobile-first approach 
-                            and strategy. Assessed UX and UI designs for technical feasibility. 
+                            mobile applications, and landing pages from concept through deployment.
+                            Standardized all output with a new, responsive, mobile-first approach
+                            and strategy. Assessed UX and UI designs for technical feasibility.
                         </p>
                     </div>
                 </div>
             </section>
         </section>
-        
 
-        
+
+
 
         <section class="recents_articles">
             <div class="blog_cards">
                 <card class="card1">
-                
-                        <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo1">
-                   
-                    
+
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo1">
+
+
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
                             <span class="iconify" data-icon="emojione:star"></span>
@@ -141,12 +160,13 @@
                 </card>
 
                 <card class="card2">
-                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo2">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo2">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
                             <span class="iconify" data-icon="emojione:star"></span>
@@ -160,12 +180,13 @@
                 </card>
 
                 <card class="card3">
-                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt="" class="card_photo3">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg" alt=""
+                        class="card_photo3">
                     <div class="card_content_container">
                         <h4 class="card_title"><b>How to write css design</b></h4>
                         <p class="card_content">
-                            Edublogs is meant for individual teachers, while CampusPress 
-                            is designed for entire schools, districts, or universities. 
+                            Edublogs is meant for individual teachers, while CampusPress
+                            is designed for entire schools, districts, or universities.
                         </p>
                         <div class="card_stars">
                             <span class="iconify" data-icon="emojione:star"></span>
@@ -181,7 +202,7 @@
         </section>
 
     </main>
-    
+
     <footer class="footer">
         <div class="newsletter_form">
             <form name="newsletter" class="newsletter_box" action="#" onsubmit="return validateForm()" method="post">
@@ -246,12 +267,13 @@
                 <span class="iconify" data-icon="fa:instagram"></span>
                 <span class="iconify" data-icon="fa:whatsapp"></span>
             </div>
-           
+
             <div class="attribution">
                 Coded by <a href="#" class="">Chance</a>
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
