@@ -11,6 +11,7 @@ const password = document.getElementById('signup_password_input');
 
          validateInputs();
      });
+     
      const setError = (element, message) =>{
          const inputControl = element.parentElement;
          const errorDisplay = inputControl.querySelector('.error');
