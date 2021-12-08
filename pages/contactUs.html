@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../css/contactUs.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src='javascript/script.js'></script>
+    <script src='../javascript/conctactUs.js'></script>
     <title>My Brand</title>
 </head>
 <body>
@@ -60,15 +60,16 @@
   
     <main class="main">
         
-        <section class="contact_form">
+        <form class="contact_form" id="form">
             <label for="names" class="contact_names">Names</label>
-            <input type="text" class="contact_names_input">
+            <input type="text" class="contact_names_input" id="contact_names_input">
+            <div class="error">dvd</div>
             <label for="email" class="contact_email">Email</label>
             <input type="text" class="contact_email_input">
             <label for="comment" class="contact_comment">Comment</label>
             <textarea class="contact_comment_input" name="commet" rows="4" cols="50"></textarea>
-            <button class="submit_contact"><strong>Send</strong></button>
-        </section>
+            <button class="submit_contact" id="btn_contact" type="submit"><strong>Send</strong></button>
+        </form>
 
         <section class="location_card">
             <div class="contact_contacts">
