@@ -15,7 +15,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -990,9 +990,9 @@ border-bottom-left-radius: 14px; */
     padding: 27px 75px;
   
     position: absolute;
-    width: 300px;
+    width: 350px;
     height: 70px;
-    left: 20px;
+    left: 8px;
     top: 50px;
   }
 
@@ -1028,7 +1028,7 @@ border-bottom-left-radius: 14px; */
   }
   
   .experience_left_image #iconify-computer {
-    margin-left: 80px;
+    margin-left: 95px;
     margin-top: 20px;
     height: 80px;
     width: 60px;
