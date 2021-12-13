@@ -176,8 +176,9 @@ ul {
   left: 150px;
   top: 370px;
   border: none;
+  /* border: 2px solid #c4c4c4; */
   outline: none;
-  padding: 20px;
+  padding: 0 20px;
 
   background: #dbdbdb;
   border-radius: 15px;
@@ -187,6 +188,21 @@ ul {
   order: 1;
   flex-grow: 0;
   margin: 17px 0px;
+}
+
+/* .contact_names_input:focus {
+  border: 2px solid #f2796e;
+} */
+
+.error {
+  position: absolute;
+  font-size: 14.5px;
+  margin-top: 5px;
+  background-color: #d81515;
+  height: 30px;
+  width: 60px;
+  left: 150px;
+  top: 400px;
 }
 
 .contact_email {

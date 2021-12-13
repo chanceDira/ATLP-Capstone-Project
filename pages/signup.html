@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../css/signup.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src='javascript/script.js'></script>
+    
     <title>My Brand</title>
 </head>
 <body>
@@ -62,14 +62,17 @@
         
         <section class="signup_form">
             <h3 class="heading-secondary">Sign up</h3>
-            <form action="#" class="signup_inputs">
+            <form action="#" class="signup_inputs" id="form_signup">
                 <label for="Names" class="signup_names">Names</label>
-                <input type="text" class="signup_names_input">
+                <input type="text" class="signup_names_input" id="signup_names_input">
+                <div class="error">Error</div>
                 <label for="Names" class="signup_email">Email</label>
-                <input type="text" class="signup_email_input">
+                <input type="text" class="signup_email_input" id="signup_email_input">
+                <div class="error">Error</div>
                 <label for="Names" class="signup_password">Password</label>
-                <input type="text" class="signup_password_input">
-                <button class="signup_submit"><strong>Sign Up</strong></button>
+                <input type="text" class="signup_password_input" id="signup_password_input">
+                <div class="error">Error</div>
+                <button class="signup_submit" type="submit" ><strong>Sign Up</strong></button>
                 <p class="else_login">Have an account? <strong><u>Login</u></strong></p>
             </form>
         </section>
@@ -146,6 +149,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src='../javascript/signup.js'></script>
 </body>
 </html>
