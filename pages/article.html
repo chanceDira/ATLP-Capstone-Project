@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='../css/login.css'>
+    <link rel='stylesheet' href='../css/article.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src='javascript/script.js'></script>
+    
     <title>My Brand</title>
 </head>
 <body>
@@ -54,21 +54,98 @@
 
     <header class="header">
         <div class="header_route">
-            <h3 class="heading-secondary">Home > Login </h2>
+            <h3 class="heading-secondary">Home > Signup </h2>
         </div>
     </header>
   
     <main class="main">
         
-        <section class="signup_form">
-            <h3 class="heading-secondary">Login</h3>
-            <form action="#" class="signup_inputs">
-                <label for="Names" class="signup_email">Email</label>
-                <input type="text" class="signup_email_input">
-                <label for="Names" class="signup_password">Password</label>
-                <input type="text" class="signup_password_input">
-                <button class="signup_submit"><strong>Login</strong></button>
-                <p class="else_login">Don’t have an account? <strong><u>Signup</u></strong></p>
+        <section class="article">
+            <div class="article_photo">
+                <img src="../assets/images/cssPhoto.jpeg" alt="blog_photo">
+                <div class="card_stars">
+                    <span class="iconify" data-icon="emojione:star"></span>
+                    <span class="iconify" data-icon="emojione:star"></span>
+                    <span class="iconify" data-icon="emojione:star"></span>
+                    <span class="iconify" data-icon="emojione:star"></span>
+                    <span class="iconify" data-icon="emojione:star"></span>
+                </div>
+            </div>
+            <div class="article_content">
+                
+                    <h3 class="article_title">
+                        Football is not legal ?
+                    </h3>
+                    <p class="article_paragraph">
+                        Football Legal is an independent media publishing football law contents on 
+                        a daily basis dedicated to all football law practitioners (lawyers, clubs, 
+                        federations, intermediaries, football stakeholders, etc.). On 23 November 2021, 
+                        the European Parliament approved a report endorsing the values of the European 
+                        sports model, in which breakaway competitions contrary to these values have no 
+                        place.  Football Legal is an independent media publishing football law contents 
+                        on a daily basis dedicated to all football law practitioners (lawyers, clubs, 
+                        federations, intermediaries, football stakeholders, etc.). On 23 November 2021, 
+                        the European Parliament approved a report endorsing the values of the European 
+                        sports model, in which breakaway competitions contrary to these values have no 
+                        place.
+                    </p>
+              
+            </div>
+        </section>
+
+        <section class="comments_list">
+            <h3 class="comment_title">
+                Comments
+            </h3>
+            <div class="cards">
+                <card class="card card_comment">
+                    <p>
+                        approved a report endorsing the values of the European sports model, 
+                        in which breakaway competitions contrary to these values have no place
+                    </p>
+                    <h4><i>10 days ago, Ishimwe Kevin</i></h4>
+                </card>
+                <card class="card card_comment">
+                    <p>
+                        approved a report endorsing the values of the European sports model, 
+                        in which breakaway competitions contrary to these values have no place
+                    </p>
+                    <h4><i>10 days ago, Ishimwe Kevin</i></h4>
+                </card>
+                <card class="card card_comment">
+                    <p>
+                        approved a report endorsing the values of the European sports model, 
+                        in which breakaway competitions contrary to these values have no place
+                    </p>
+                    <h4><i>10 days ago, Ishimwe Kevin</i></h4>
+                </card>
+            </div>
+        </section>
+
+        <section class="comment">
+          
+            <form action="" class="comment_form">
+            
+                    <label for="names">Names</label><br>
+                    <input type="text" class="names_input"><br>
+                    <div class="error error_names"></div>
+                
+
+            
+                    <label for="Email">Email</label><br>
+                    <input type="text" class="email_input"><br>
+                    <div class="error error_email"></div>
+                
+
+            
+                    <label for="comment">Comment</label><br>
+                    <textarea class="comment_input" rows="4" cols="50"></textarea><br>
+                    <div class="error error_comment"></div><br>
+                
+              
+             
+               
+                <button class="btn btn_submit">Comment</button>
             </form>
         </section>
 
@@ -144,6 +221,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src='../javascript/signup.js'></script>
 </body>
 </html>
