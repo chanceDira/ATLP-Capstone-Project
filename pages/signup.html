@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../css/signup.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    
+
     <title>My Brand</title>
 </head>
+
 <body>
     <section class="top_background">
         <div class='navbar'>
             <div class="brand-name">
                 <strong>My Brand</strong>
             </div>
-    
+
             <!-- Mobile view -->
-    
+
             <nav class="nav">
                 <ul class="nav__items">
                     <li class="nav__item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav-link">Skills</a>
@@ -30,13 +32,13 @@
                         <a href="#" class="nav-link">Experiences</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav-link">Articles</a>
+                        <a href="../pages/articles.html" class="nav-link">Articles</a>
                     </li>
                     <li class="nav__item">
                         <a href="../pages/contactUs.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
-    
+
                 <ul class="nav__buttons">
                     <li class="nav__item">
                         <a href="../pages/login.html" class="nav-link-login">Login</a>
@@ -46,39 +48,42 @@
                     </li>
                 </ul>
             </nav>
-    
-          
+
+
         </div>
     </section>
-    
+
 
     <header class="header">
         <div class="header_route">
             <h3 class="heading-secondary">Home > Signup </h2>
         </div>
     </header>
-  
+
     <main class="main">
-        
+
         <section class="signup_form">
-            <h3 class="heading-secondary">Sign up</h3>
-            <form action="#" class="signup_inputs" id="form_signup">
-                <label for="Names" class="signup_names">Names</label>
-                <input type="text" class="signup_names_input" id="signup_names_input">
-                <div class="error">Error</div>
-                <label for="Names" class="signup_email">Email</label>
-                <input type="text" class="signup_email_input" id="signup_email_input">
-                <div class="error">Error</div>
-                <label for="Names" class="signup_password">Password</label>
-                <input type="text" class="signup_password_input" id="signup_password_input">
-                <div class="error">Error</div>
-                <button class="signup_submit" type="submit" ><strong>Sign Up</strong></button>
-                <p class="else_login">Have an account? <strong><u>Login</u></strong></p>
-            </form>
+            <div class="form_wrapper">
+                <h3 class="heading-secondary">Sign up</h3>
+                <form action="#" class="signup_inputs" id="form_signup">
+                    <label for="Names" class="signup_names">Names</label>
+                    <input type="text" class="signup_names_input" id="signup_names_input">
+                    <div class="error error-names"></div>
+                    <label for="Names" class="signup_email">Email</label>
+                    <input type="email" class="signup_email_input" id="signup_email_input">
+                    <div class="error error-email"></div>
+                    <label for="Names" class="signup_password">Password</label>
+                    <input type="password" class="signup_password_input" id="signup_password_input">
+                    <div class="error error-password"></div>
+                    <button class="signup_submit" type="submit"><strong>Sign Up</strong></button>
+                    <p class="else_login">Have an account? <strong><u>Login</u></strong></p>
+                </form>
+            </div>
+
         </section>
 
     </main>
-    
+
     <footer class="footer">
         <div class="newsletter_form">
             <form action="#" class="newsletter_box">
@@ -151,4 +156,5 @@
     </footer>
     <script src='../javascript/signup.js'></script>
 </body>
+
 </html>
