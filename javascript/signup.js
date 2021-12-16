@@ -70,3 +70,18 @@ const setSuccess = (element) => {
 //   element.classList.add("success");
 //   element.classList.remove("error");
 };
+
+
+// firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+//   .then((userCredential) => {
+//     // Signed in 
+//     var user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     var errorCode = error.code;
+//     var errorMessage = error.message;
+//     // ..
+//   });
+
+

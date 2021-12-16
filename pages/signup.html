@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../css/signup.css'>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   
     <title>My Brand</title>
 </head>
 
@@ -75,7 +77,7 @@
                     <label for="Names" class="signup_password">Password</label>
                     <input type="password" class="signup_password_input" id="signup_password_input">
                     <div class="error error-password"></div>
-                    <button class="signup_submit" type="submit"><strong>Sign Up</strong></button>
+                    <button onClick="signUp()" class="signup_submit" type="submit"><strong>Sign Up</strong></button>
                     <p class="else_login">Have an account? <strong><u>Login</u></strong></p>
                 </form>
             </div>
@@ -155,6 +157,7 @@
         </div>
     </footer>
     <script src='../javascript/signup.js'></script>
+    <script defer src="../firebase.js"></script>
 </body>
 
 </html>
