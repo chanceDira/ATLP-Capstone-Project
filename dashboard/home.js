@@ -11,6 +11,9 @@ const firebaseConfig = {
 
 const app = firebase.initializeApp(firebaseConfig);
 const db = app.database();
+const auth = app.auth();
+
+var updateKey = ""
 //   console.log(app.name);
 
 function upload() {
@@ -20,6 +23,7 @@ function upload() {
   var imageName = image.name;
   var storageRef = firebase.storage().ref("images/" + imageName);
   var uploadTask = storageRef.put(image);
+
   uploadTask.on(
     "state_changed",
     function (snapshot) {
@@ -77,12 +81,12 @@ function getdata() {
           value.imageURL +
           "' alt='CardPhoto' class='card_photo'>" +
           "<div class='card_content_container'>" +
-          "<h4 class='card_title'>" +
+          "<h4 class='card_title' id='card_title'>" +
           "<b>" +
           value.title +
           "</b>" +
           "</h4>" +
-          "<p class='card_content'>" +
+          "<p class='card_content' id='card_content'>" +
           value.text +
           "</p>" +
           "<div class='card_stars'>" +
@@ -101,11 +105,15 @@ function getdata() {
           "<button class='btn btn-delete' id='" +
           key +
           "' onclick='delete_post(this.id)'>Delete</button>" +
+          "<button class='btn btn-update' id='" +
+          key +
+          "' onclick='toggle(this.id)'><a href='#card-input-form'>Update</a></button>" +
           "</div>" +
           "</card>" +
           posts_div.innerHTML;
       }
     });
+
 }
 
 function delete_post(key) {
@@ -115,3 +123,109 @@ function delete_post(key) {
     .remove();
   getdata();
 }
+
+function logOut(){
+
+  try {
+    auth.signOut();
+    alert('Logged out')
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+// function update2(key) {
+
+//   var image = document.getElementById("image").files[0];
+//   var post = document.getElementById("post").value;
+//   var postTitle = document.getElementById("post-title").value;
+  
+//   // const id = document.getElementById("blog_cards").value;
+
+//   firebase
+//           .database()
+//           .ref("blogs/" + key)
+//           // .doc(key)
+//           .set({
+//     image,
+//     post,
+//     postTitle
+// },
+//     {
+//         merge: true
+//     }
+// ).then((result) => {
+//     const data = result.data;
+//     localStorage.setItem("blogs", data);
+//     alert("Data well Updated...")
+//     console.log("Document written with ID: ", result.id);
+// }).catch((error) => {
+//     const errorMessage = error.message;
+//     console.log(errorMessage);
+// })
+
+
+
+// }
+
+
+
+// function update(key) {
+//   // var image = document.getElementById("image").files[0];
+//   var post = document.getElementById("post").value;
+//   var postTitle = document.getElementById("post-title").value;
+
+//   var updates = {
+//     // imageURL : image,
+//     text : post,
+//     title : postTitle
+//   }
+
+//   firebase.database().ref('blogs/' + key).update(updates)
+
+//   alert('updated')
+// }
+
+function toggle(key) {
+  updateKey = key
+  var x = document.getElementById("update-box");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  console.log("Key :", updateKey)
+
+}
+
+function updating() {
+  console.log("#updating-key: ", updateKey)
+
+  //Loading current article in blog
+
+ 
+  
+              // var image = document.getElementById("image").files[0];
+  
+  var post = document.getElementById("post-update").value;
+  var postTitle = document.getElementById("post-title-update").value;
+  console.log("Values: ", post, postTitle)
+  var updates = {
+    // imageURL : image,
+    text : post,
+    title : postTitle
+  }
+
+  firebase.database().ref('blogs/').child(updateKey).update(updates).then(() => {
+    alert('updated')
+  })
+
+  
+ 
+
+
+  
+}
+
+
