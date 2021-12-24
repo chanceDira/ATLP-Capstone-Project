@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Poppins)");
+
 
 :root {
   --desktop: 1200px;
@@ -194,6 +194,20 @@ ul {
 
 .signup_form p {
   color: var(--grey-black);
+}
+
+.signup_form input:focus {
+  outline: 0;
+}
+
+.signup_inputs.success input {
+  border: 1px solid rgb(43, 214, 0);
+  border-color: greenyellow;
+  /* background-color: hotpink; */
+}
+
+.signup_inputs.success .error {
+
 }
 
 .signup_form .error-names {

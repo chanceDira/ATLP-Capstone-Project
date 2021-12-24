@@ -1,4 +1,3 @@
-@import url("https://fonts.google.com/specimen/Poppins)");
 
 :root {
   --desktop: 1200px;
@@ -286,7 +285,7 @@ margin: 0px 31px;
 }
 
 .card:hover {
-    background-color: rgba(224, 224, 224, 0.87);
+    /* background-color: rgba(224, 224, 224, 0.87); */
 }
 
 .blog_cards .card img {

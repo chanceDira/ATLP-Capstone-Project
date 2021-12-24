@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../css/contactUs.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src='../javascript/conctactUs.js'></script>
+  
     <title>My Brand</title>
 </head>
 <body>
@@ -65,9 +66,9 @@
             <input type="text" class="contact_names_input" id="contact_names_input">
             <!-- <div class="error">dvd</div> -->
             <label for="email" class="contact_email">Email</label>
-            <input type="text" class="contact_email_input">
+            <input type="text" class="contact_email_input" id="contact_email_input">
             <label for="comment" class="contact_comment">Comment</label>
-            <textarea class="contact_comment_input" name="commet" rows="4" cols="50"></textarea>
+            <textarea class="contact_comment_input" name="commet" rows="4" cols="50" id="contact_comment_input"></textarea>
             <button class="submit_contact" id="btn_contact" type="submit"><strong>Send</strong></button>
         </form>
 
@@ -101,8 +102,8 @@
     <footer class="footer">
         <div class="newsletter_form">
             <form action="#" class="newsletter_box">
-                <input type="text" class="user_email_newsletter" placeholder="Enter your email ..." />
-                <button class="btn_submit">Newsletter</button>
+                <input type="text" class="user_email_newsletter" id="user_email_newsletter" placeholder="Enter your email ..." />
+                <button class="btn_submit" id="btn_submit_newletter">Newsletter</button>
             </form>
         </div>
         <div class="footer-footer">
@@ -168,6 +169,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../javascript/conctactUs.js"></script>
     
 </body>
 </html>
