@@ -199,6 +199,30 @@ function toggle(key) {
 
 }
 
+// function updating() {
+//   console.log("#updating-key: ", updateKey)
+
+//   //Loading current article in blog
+
+ 
+  
+//               // var image = document.getElementById("image").files[0];
+  
+//   var post = document.getElementById("post-update").value;
+//   var postTitle = document.getElementById("post-title-update").value;
+//   console.log("Values: ", post, postTitle)
+//   var updates = {
+//     // imageURL : image,
+//     text : post,
+//     title : postTitle
+//   }
+
+//   firebase.database().ref('blogs/').child(updateKey).update(updates).then(() => {
+//     alert('updated')
+//   })
+  
+// }
+
 function updating() {
   console.log("#updating-key: ", updateKey)
 
@@ -206,25 +230,49 @@ function updating() {
 
  
   
-              // var image = document.getElementById("image").files[0];
-  
+  var image = document.getElementById("image-update").files[0];
   var post = document.getElementById("post-update").value;
   var postTitle = document.getElementById("post-title-update").value;
-  console.log("Values: ", post, postTitle)
-  var updates = {
-    // imageURL : image,
-    text : post,
-    title : postTitle
-  }
-
-  firebase.database().ref('blogs/').child(updateKey).update(updates).then(() => {
-    alert('updated')
-  })
-
+  var imageName = image.name;
+  var storageRef = firebase.storage().ref("images/" + imageName);
+  var uploadTask = storageRef.put(image);
   
- 
-
-
+  console.log("Values: ", post, postTitle, imageName)
+  
+  uploadTask.on(
+    "state_changed",
+    function (snapshot) {
+      var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      console.log("upload is " + progress + " done");
+    },
+    function (error) {
+      console.log(error.message);
+    },
+    function () {
+      uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+        firebase
+          .database()
+          .ref("blogs/")
+          .child(updateKey)
+          .update(
+            {
+              title: postTitle,
+              text: post,
+              imageURL: downloadURL,
+            },
+            function (error) {
+              if (error) {
+                alert("Error while uploading");
+              } else {
+                alert("Successfully uploaded");
+                document.getElementById("post-form").reset();
+                getdata();
+              }
+            }
+          );
+      });
+    }
+  );
   
 }
 
